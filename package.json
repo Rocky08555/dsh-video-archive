@@ -1,0 +1,43 @@
+{
+  "name": "dsh-video-archive",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness skill bundle: turn a Douyin/video link into a structured Obsidian note (transcript + snapshots + gallery), fully local, no API key.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "skills",
+    "codex",
+    "docs",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skill",
+    "douyin",
+    "obsidian",
+    "whisper",
+    "transcription",
+    "video-to-notes"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

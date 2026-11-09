@@ -1,0 +1,9 @@
+# dsh-video-archive — bundled skill provider
+# Resolves the packaged skills/ directory from the installed package identity.
+- insert:
+    - id: video-archive-skill-filesystem
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: video-archive-plugin
+        includeDefaultRoots: false
+        bundledSkillDir: !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('dsh-video-archive/package.json')), 'skills')
