@@ -1,0 +1,11 @@
+node_modules/
+hub/
+xet/
+.vidsum_out/
+vidsum_out/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.agent_harnesses.json
